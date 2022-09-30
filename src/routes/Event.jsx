@@ -13,13 +13,16 @@ const Event = () => {
     <div className='event-container' >
       <img className='cake-pic' src={cake} alt="cake" />
       <div className='event-details' >
-        <div>
+        <div className='host-info'>
           <h1>{eventName}</h1>
           <p>Hosted by <span>{hostName}</span></p>
         </div>
         <div className='event-deet'>
           <FaRegCalendarCheck/>
-          <p>{`${date} ${startTime}`} <br/> to {`${endTime}`}</p>
+          <div>
+          <p>{`${date} ${startTime}`}</p>
+          <p>{`${endTime.get}`}</p>
+          </div>
         </div>
         <div className='event-deet'>
           <FaMapMarkerAlt/>

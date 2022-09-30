@@ -59,7 +59,7 @@ const Create = () => {
             onChange={handleChange} 
             value={eventData.hostName} required/>
 
-          <input className='form-input' name="date" type="text" placeholder='Date - mm/dd/yyyy' onChange={handleChange} value={eventData.date} required/>
+          <input className='form-input' name="date" type="text" placeholder='Date' onChange={handleChange} value={eventData.date} required/>
           
           <input className='form-input' name="startTime" type="text" placeholder='Start Time - PST' onChange={handleChange} value={eventData.startTime} required/>
           

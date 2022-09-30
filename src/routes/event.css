@@ -25,9 +25,15 @@ h1 {
   color: #240D57;
 }
 
+.host-info {
+  margin: 0;
+
+
+}
+
 .event-deet {
-  width: 250px;
+  /* width: 250px; */
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
