@@ -1,0 +1,23 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 350px;
+  text-align: center;
+}
+.heading {
+  color: #240D57;
+  margin-bottom: 0;
+}
+.snap {
+  background-image: linear-gradient(to right, #501FC1, #E87BF8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.subheading {
+  color: #4F4F4F;
+  font-size: 16px;
+}

@@ -1,0 +1,33 @@
+.event-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 350px;
+}
+
+.cake-pic {
+  width: 100%;
+}
+
+.event-details {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 100%;
+}
+
+h1 {
+  color: #240D57;
+}
+
+.event-deet {
+  width: 250px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
