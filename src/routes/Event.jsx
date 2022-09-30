@@ -21,7 +21,7 @@ const Event = () => {
           <FaRegCalendarCheck/>
           <div>
           <p>{`${date} ${startTime}`}</p>
-          <p>{`${endTime.get}`}</p>
+          <p>{`${endTime}`}</p>
           </div>
         </div>
         <div className='event-deet'>
