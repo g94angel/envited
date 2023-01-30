@@ -45,3 +45,8 @@ input:focus {
   color: transparent;
   width: 120px;
 }
+
+
+input[type='date'], input[type='time'] {
+  font-family: inherit;
+}

@@ -59,14 +59,34 @@ const Create = () => {
             onChange={handleChange} 
             value={eventData.hostName} required/>
 
-          <input className='form-input' name="date" type="text" placeholder='Date' onChange={handleChange} value={eventData.date} required/>
+          <input 
+            className='form-input' 
+            name="date" 
+            type="date"
+            onChange={handleChange} 
+            value={eventData.date} required/>
           
-          <input className='form-input' name="startTime" type="text" placeholder='Start Time - PST' onChange={handleChange} value={eventData.startTime} required/>
+          <label htmlFor="startTime">Start time</label>
+          <input 
+            id='startTime'
+            className='form-input' 
+            name="startTime" 
+            type="time"
+            onChange={handleChange} 
+            value={eventData.startTime} required/>
           
-          <input className='form-input' name="endTime" type="text" placeholder='End Time - PST' onChange={handleChange} value={eventData.endTime} required/>
+          <label htmlFor='endTime'>End time</label>
+          <input 
+            id='endTime'
+            className='form-input' 
+            name="endTime" 
+            type="time" 
+            onChange={handleChange} 
+            value={eventData.endTime} required/>
           
           
-          <input className='form-input' name="location" type="text" placeholder='Location' onChange={handleChange} value={eventData.location} required/>
+          <input 
+            className='form-input' name="location" type="text" placeholder='Address' onChange={handleChange} value={eventData.location} required/>
           
           <div>
             <label 

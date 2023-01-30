@@ -19,16 +19,68 @@ button {
   outline: none;
   cursor: pointer;
   border: none;
+  width: 75%;
 }
 
-/* a {
-  text-decoration: none;
-  color: inherit;
-  font-weight: 700;
-} */
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 400px;
+  margin: 0 auto;
+}
 
-/* 
-@media (min-width: 1155px) {
 
+@media (min-width: 700px) and (max-width: 1028px) {
+  .heading {
+    font-size: 64px;
+  }
+  .subheading {
+    font-size: 24px;
+  }
+  .event-image {
+    width: 400px;
+  }
+  .main-container {
+    width: 500px;
+  }
+}
+
+@media (min-width: 1029px) {
+  .main-container {
+    position: relative;
+  }
+
+  .heading {
+    position: absolute;
+    top: 225px;
+    left: 350px;
+    text-align: right;
+    width: 250px;
+  }
+
+  .subheading {
+    position: absolute;
+    top: 400px;
+    left: 150px;
+    text-align: right;
+    width: 450px;
+  }
+
+  .create {
+    position: absolute;
+    top: 500px;
+    left: 300px;
+    /* text-align: right; */
+    /* width: 450px; */
+  }
   
-} */
+  .event-image {
+    position: absolute;
+    top: 150px;
+    right: 250px;
+    text-align: right;
+    width: 350px;
+  }
+
+}

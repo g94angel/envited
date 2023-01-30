@@ -1,6 +1,6 @@
 import React, {useContext} from 'react'
 import { EventContext } from '../context/EventContext'
-import cake from '../assets/Birthday cake.png'
+import cake from '../assets/cake.png'
 import './event.css'
 import { FaRegCalendarCheck, FaMapMarkerAlt } from "react-icons/fa";
 

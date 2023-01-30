@@ -5,7 +5,7 @@ import Button from './Button';
 
 const Home = () => {
   return (
-    <div>
+    <div className='main-container'>
       <Header/>
       <EventImage/>
       <Button/>

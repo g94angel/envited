@@ -9,11 +9,9 @@ const Button = () => {
     navigate('/create')
   }
   return (
-    <div className='button'>
-      <button onClick={createEvent} > 
-        
+    <div className='button-container'>
+      <button className='create button' onClick={createEvent} > 
           🎉 Create my event  
-        
       </button>
     </div>
   )

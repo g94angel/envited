@@ -1,11 +1,11 @@
 import React from 'react'
-import './event.css'
-import eventImage from '../assets/Landing page image.svg'
+import './event-image.css'
+import eventImage from '../assets/landing-page.svg'
 
 const EventImage = () => {
   return (
     <div className='event'>
-      <img src={eventImage} alt="event" />
+      <img className='event-image' src={eventImage} alt="event" />
     </div>
   )
 }
