@@ -66,21 +66,23 @@ const Create = () => {
             onChange={handleChange} 
             value={eventData.date} required/>
           
-          <label htmlFor="startTime">Start time</label>
+          {/* <label htmlFor="startTime">Start time</label> */}
           <input 
-            id='startTime'
+            // id='startTime'
             className='form-input' 
             name="startTime" 
-            type="time"
+            type="text"
+            placeholder='Start time'
             onChange={handleChange} 
             value={eventData.startTime} required/>
           
-          <label htmlFor='endTime'>End time</label>
+          {/* <label htmlFor='endTime'>End time</label> */}
           <input 
-            id='endTime'
+            // id='endTime'
             className='form-input' 
             name="endTime" 
-            type="time" 
+            type="text"
+            placeholder='Start time'
             onChange={handleChange} 
             value={eventData.endTime} required/>
           
@@ -99,7 +101,7 @@ const Create = () => {
               onChange={handleChange} 
               value={eventData.eventPhoto} />
           </div>
-          <button className='btn' >Next</button>
+          <button className='btn'>Next</button>
         </form>
       </div>
     </div>

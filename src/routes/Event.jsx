@@ -2,31 +2,31 @@ import React, {useContext} from 'react'
 import { EventContext } from '../context/EventContext'
 import cake from '../assets/cake.png'
 import './event.css'
-import { FaRegCalendarCheck, FaMapMarkerAlt } from "react-icons/fa";
+// import { FaRegCalendarCheck, FaMapMarkerAlt } from "react-icons/fa";
 
 const Event = () => {
   const {eventData} = useContext(EventContext)
-  console.log(eventData);
   const {eventName, hostName, date, startTime, endTime, location} = eventData
 
   return (
-    <div className='event-container' >
+    <div className='event-container'>
       <img className='cake-pic' src={cake} alt="cake" />
       <div className='event-details' >
-        <div className='host-info'>
-          <h1>{eventName}</h1>
-          <p>Hosted by <span>{hostName}</span></p>
+        <div className='detail event-name'>
+          {/* <h1>{eventName}</h1> */}
+          <h1>Event Name</h1>
+          {/* <p>Hosted by <span className='host'>{hostName}</span></p> */}
+          <p className='host-name'>Hosted by Angel Giron</p>
         </div>
-        <div className='event-deet'>
-          <FaRegCalendarCheck/>
+        <div className='detail'>
+          <i class="fa-solid fa-calendar-days"></i>
           <div>
-          <p>{`${date} ${startTime}`}</p>
-          <p>{`${endTime}`}</p>
+            <p>On {date} from {startTime} to {endTime}</p>
           </div>
         </div>
-        <div className='event-deet'>
-          <FaMapMarkerAlt/>
-          <p>{location}</p>
+        <div className='detail'>
+          <i class="fa-solid fa-location-pin"></i>
+          <p>Location: {location}</p>
         </div>
       </div>
     </div>

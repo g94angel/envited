@@ -15,7 +15,7 @@
   background: white;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   margin: 0 auto;
   width: 100%;
@@ -25,15 +25,30 @@ h1 {
   color: #240D57;
 }
 
-.host-info {
+
+
+.host-name {
   margin: 0;
-
-
 }
 
-.event-deet {
+.detail {
   /* width: 250px; */
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+i {
+  margin-right: 20px;
+}
+
+.event-name {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+h1 {
+  margin-bottom: 10px;
 }
